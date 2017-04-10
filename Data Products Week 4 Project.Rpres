@@ -1,0 +1,41 @@
+Data Products Week 4 Project
+========================================================
+author: Lovenumbers123
+date: April 9, 2017
+autosize: true
+
+Fastest Speed in the Quarter Mile
+========================================================
+
+This application is to determine how many car  cylinders go the fastest in the quarter mile.
+
+You can view the application at
+
+- Shiney server link:  https://lovenumbers123.shinyapps.io/data_products_week_4_project/
+- Git-hub link: XXXXX
+- Rpubs link:  http://rpubs.com/lovenumbers/266794
+
+
+Overview of Chart Process
+========================================================
+
+- Move your cursor to a point in the graph
+- The graph will illustrate the (x) Cylinders and (y) the rate of speed for that cylinder
+- The graph automatically updates when you move the cursor
+```
+
+Summary of MTCARS Dataset
+========================================================
+
+```{r}
+summary(mtcars)
+```
+
+Quarter Mile Speed Plot
+========================================================
+
+```{r, echo=FALSE}
+   plot(mtcars$cyl, mtcars$qsec)
+    title(main = list("Quarter Mile Speed", cex = 1.5,
+                      col = "red", font = 3))
+```
